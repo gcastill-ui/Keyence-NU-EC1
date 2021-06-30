@@ -1,0 +1,2499 @@
+<?xml version="1.0" encoding="ISO-2022-JP"?>
+<!---->
+<EtherCATInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EtherCATInfo.xsd" Version="1.2">
+  <Vendor>
+    <Id>#x00000541</Id>
+    <Name>KEYENCE</Name>
+    <ImageData16x14>424DE8000000000000007600000028000000100000000E000000010004000000000072000000110B0000110B00000000000000000000FFFFFF00FF00FF000000FF00000000005A67FD00C3CBFC0097A2FC00EDECE100BDBDBB0082827B0031302B00A9A89C00F8F8F500E4E7FA00707070004F4F4F0011000000000000111050000000CB9B0110450000008AA8011044D00007A39C0110424000093A700110422500B3A80001104224D7A390000110422267A39000011042222D83A70001104222240B3A70011042222260F3E70110542222257AA801100D66666608F90111000000000000110000</ImageData16x14>
+  </Vendor>
+  <Descriptions>
+    <Groups>
+      <Group>
+        <Type>EC1</Type>
+        <Name LcId="1033">Sensor Communication Adapter</Name>
+        <Name LcId="1031">Sensor Communication Adapter</Name>
+        <ImageData16x14>424DE4000000000000007200000028000000100000000E000000010004000000000072000000120B0000120B00000F0000000F000000FF00FF00A9A9A9006262620043434300DFDFDF00C4C4C400BFBFBF0095959500858585007E7E7E00656565005B5B5B003838380028282800000000000000030030000000000008CD3300000000000845323000000000096432300000000009163230000000000B333230000000000A713230000000000A223230000000000A713230000000000A223230000000000844323000000000027732300000000000211330000000000002223000000000</ImageData16x14> 
+      </Group>
+    </Groups>
+    <Devices>
+      <Device Physics="YY">
+        <Type ProductCode="#x2500" RevisionNo="#x0004">NU-EC1</Type>
+        <Name LcId="1033">
+          <![CDATA[NU-EC1 (Rev 0004)]]>
+        </Name>
+        <Name LcId="1031">
+          <![CDATA[NU-EC1 (Rev 0004)]]>
+        </Name>
+        <GroupType>EC1</GroupType>
+        <Fmmu Sm="2" Su="0">Outputs</Fmmu>
+        <Fmmu Sm="3" Su="0">Inputs</Fmmu>
+        <Fmmu Sm="4" Su="1">Inputs</Fmmu>
+        <Fmmu Sm="5" Su="1">Outputs</Fmmu>
+        <Fmmu Sm="6" Su="2">Inputs</Fmmu>
+        <Sm MinSize="32" MaxSize="192" DefaultSize="128" StartAddress="#x1000" ControlByte="#x26" Enable="1">MBoxOut</Sm>
+        <Sm MinSize="32" MaxSize="192" DefaultSize="128" StartAddress="#x1200" ControlByte="#x22" Enable="1">MBoxIn</Sm>
+        <Sm StartAddress="#x1400" ControlByte="#x64">Outputs</Sm>
+        <Sm StartAddress="#x160C" ControlByte="#x20" Enable="1">Inputs</Sm>
+        <Sm StartAddress="#x1800" ControlByte="#x20">Inputs</Sm>
+        <Sm StartAddress="#x1C00" ControlByte="#x24">Outputs</Sm>
+        <Sm StartAddress="#x1D00" ControlByte="#x20">Inputs</Sm>
+        <RxPdo Fixed="1" Sm="5" Su="1">
+          <Index>#x1600</Index>
+          <Name>External Input Request</Name>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID00</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID01</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID02</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID03</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID04</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID05</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID06</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID07</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID08</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID09</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID10</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID11</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID12</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID13</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID14</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7000</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>External Input Request:ID15</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="1">
+          <Index>#x1605</Index>
+          <Name>Timestamp Shortcut Request</Name>
+          <Entry>
+            <Index>#x7005</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Request ID Number of Timestamp</Name>
+            <DataType>UINT</DataType>
+          </Entry>
+        </RxPdo>
+        <TxPdo Fixed="1" Mandatory="1" Sm="3" Su="0">
+          <Index>#x1A00</Index>
+          <Name>Output</Name>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID00</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID01</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID02</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID03</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID04</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID05</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID06</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID07</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID08</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID09</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID10</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID11</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID12</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID13</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID14</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6000</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Output ID15</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Mandatory="1" Sm="3" Su="0">
+          <Index>#x1A01</Index>
+          <Name>Status for All Modules</Name>
+          <Entry>
+            <Index>#x6001</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>All Modules:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6001</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>All Modules:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6001</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>All Modules:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6001</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6001</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>All Modules:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6001</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>All Modules:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6001</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>All Modules:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6001</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>All Modules:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6001</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>All Modules:Status:Error Info</Name>
+            <DataType>BYTE</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1">
+          <Index>#x1A04</Index>
+          <Name>Timestamp for Output</Name>
+          <Exclude>#x1A05</Exclude>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID00</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID01</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID02</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID03</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID04</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID05</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID06</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID07</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID08</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID09</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID10</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID11</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID12</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID13</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID14</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6004</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp ID15</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1">
+          <Index>#x1A05</Index>
+          <Name>Timestamp Shortcut Response</Name>
+          <Exclude>#x1A04</Exclude>
+          <Entry>
+            <Index>#x6005</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>64</BitLen>
+            <Name>Timestamp Response</Name>
+            <DataType>ULINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6005</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID Number of Timestamp</Name>
+            <DataType>UINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A10</Index>
+          <Name>PD:ID00</Name>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID00:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID00:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID00:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID00:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID00:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID00:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID00:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID00:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID00:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID00:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID00:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID00:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID00:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6100</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID00:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A11</Index>
+          <Name>PD:ID01</Name>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID01:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID01:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID01:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID01:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID01:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID01:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID01:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID01:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID01:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID01:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID01:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID01:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID01:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6110</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID01:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A12</Index>
+          <Name>PD:ID02</Name>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID02:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID02:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID02:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID02:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID02:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID02:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID02:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID02:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID02:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID02:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID02:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID02:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID02:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6120</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID02:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A13</Index>
+          <Name>PD:ID03</Name>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID03:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID03:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID03:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID03:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID03:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID03:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID03:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID03:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID03:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID03:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID03:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID03:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID03:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6130</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID03:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A14</Index>
+          <Name>PD:ID04</Name>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID04:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID04:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID04:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID04:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID04:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID04:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID04:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID04:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID04:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID04:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID04:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID04:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID04:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6140</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID04:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A15</Index>
+          <Name>PD:ID05</Name>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID05:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID05:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID05:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID05:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID05:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID05:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID05:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID05:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID05:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID05:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID05:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID05:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID05:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6150</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID05:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A16</Index>
+          <Name>PD:ID06</Name>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID06:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID06:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID06:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID06:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID06:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID06:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID06:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID06:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID06:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID06:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID06:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID06:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID06:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6160</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID06:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A17</Index>
+          <Name>PD:ID07</Name>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID07:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID07:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID07:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID07:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID07:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID07:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID07:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID07:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID07:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID07:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID07:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID07:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID07:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6170</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID07:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A18</Index>
+          <Name>PD:ID08</Name>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID08:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID08:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID08:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID08:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID08:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID08:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID08:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID08:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID08:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID08:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID08:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID08:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID08:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6180</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID08:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A19</Index>
+          <Name>PD:ID09</Name>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID09:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID09:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID09:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID09:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID09:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID09:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID09:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID09:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID09:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID09:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID09:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID09:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID09:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6190</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID09:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A1A</Index>
+          <Name>PD:ID10</Name>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID10:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID10:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID10:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID10:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID10:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID10:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID10:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID10:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID10:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID10:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID10:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID10:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID10:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61A0</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID10:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A1B</Index>
+          <Name>PD:ID11</Name>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID11:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID11:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID11:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID11:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID11:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID11:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID11:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID11:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID11:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID11:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID11:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID11:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID11:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61B0</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID11:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A1C</Index>
+          <Name>PD:ID12</Name>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID12:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID12:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID12:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID12:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID12:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID12:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID12:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID12:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID12:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID12:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID12:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID12:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID12:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61C0</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID12:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A1D</Index>
+          <Name>PD:ID13</Name>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID13:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID13:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID13:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID13:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID13:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID13:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID13:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID13:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID13:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID13:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID13:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID13:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID13:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61D0</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID13:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A1E</Index>
+          <Name>PD:ID14</Name>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID14:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID14:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID14:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID14:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID14:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID14:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID14:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID14:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID14:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID14:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID14:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID14:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID14:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61E0</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID14:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="4" Su="1">
+          <Index>#x1A1F</Index>
+          <Name>PD:ID15</Name>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID15:Status:Error Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID15:Status:Warning Status</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID15:Status:Sensor Ready</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID15:Status:Sensor Setting Error</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID15:Status:Sensor External Input Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID15:Status:Sensor EEPROM Busy</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID15:Status:Updating Sensor Setting</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID15:Value-Synchronized Output 1</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID15:Value-Synchronized Output 2</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID15:Value-Synchronized Output 3</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>Reserved</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID15:Status:Current Value Invalid</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID15:Status:Current Value Under Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>1</BitLen>
+            <Name>ID15:Status:Current Value Over Range</Name>
+            <DataType>BOOL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x61F0</Index>
+            <SubIndex>17</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>ID15:Current Value</Name>
+            <DataType>INT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="1" Sm="6" Su="2">
+          <Index>#x1A40</Index>
+          <Name>Device Status and Counter</Name>
+          <Entry>
+            <Index>#x3040</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>Device Status</Name>
+            <DataType>UINT16</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x3080</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Internal Counter</Name>
+            <DataType>UINT32</DataType>
+          </Entry>
+        </TxPdo>
+        <Mailbox>
+          <CoE SdoInfo="1" PdoAssign="1" PdoConfig="0" CompleteAccess="1" />
+        </Mailbox>
+        <Dc>
+          <OpMode>
+            <Name>FreeRun</Name> 
+            <Desc>FreeRun</Desc> 
+            <AssignActivate>#x00</AssignActivate> 
+            <CycleTimeSync0 Factor="0">0</CycleTimeSync0> 
+            <ShiftTimeSync0>0</ShiftTimeSync0> 
+          </OpMode>
+          <OpMode>
+            <Name>DC</Name>
+            <Desc>DC-Synchronous</Desc>
+            <AssignActivate>#x300</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0>0</ShiftTimeSync0>
+          </OpMode>
+        </Dc>
+        <Eeprom>
+          <ByteSize>8192</ByteSize>
+          <ConfigData>080C001400000000</ConfigData>
+        </Eeprom>
+        <ImageData16x14>424DE8000000000000007600000028000000100000000E000000010004000000000072000000120B0000120B00000000000000000000FF00FF00DFDFDF00C4C4C400BFBFBF00A9A9A900959595008E8E8E00858585007E7E7E0065656500626262005B5B5B0043434300383838002828280000000000000C00CC0C0000000007DEC8C8C00000000712C4C4CC0000000831C4C4CC0000000843C4C4CC0000000BCCC8C8CC0000000954C6C6CC00000009AAC6C6CC0000000954C6C6CC00000009AACECECC0000000711CAECEC0000000A55CACECE00000000A44CC000000000000AAAC00000000000</ImageData16x14>
+      </Device>
+    </Devices>
+  </Descriptions>
+</EtherCATInfo>
